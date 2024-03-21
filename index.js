@@ -6,6 +6,7 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
+    aboutKellyQ : String
   }
 `;
 
@@ -15,6 +16,10 @@ const resolvers = {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
       },
+    aboutKellyQ: () =>{
+      return `¡Hola, soy Kelly Quintana tengo 22 años y me encanta aprender nuevas tecnologías.
+              Soy Estudiante de ingenieria de sistemas y desarrolladora junior para una empresa de apuestas de Cali!`;
+    }
   },
 };
 
