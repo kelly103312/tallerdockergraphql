@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello(message: String!): String
     aboutKellyQ : String
+    aboutErvin: String 
     aboutMateo : String
   }
 `;
@@ -15,16 +16,22 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: (_, { message }) => {
-        return `¡Hola, ${message}! Un saludo por parte del profe `;
-      },
+      return `¡Hola, ${message}! Un saludo por parte del profe `;
+    },
     aboutKellyQ: () =>{
       return `¡Hola, soy Kelly Quintana tengo 22 años y me encanta aprender nuevas tecnologías.
               Soy Estudiante de ingenieria de sistemas y desarrolladora junior para una empresa de apuestas de Cali!`;
     },
+
+    aboutErvin: () => {
+      return `Hola, soy Ervin. Soy estudiante de ingeniería de sistemas de sexto semestre.`;
+    },
+
     aboutMateo: () =>{
       return `¡Hola, soy Mateo, tengo 24 años y soy estudiante de ingeniería de sistemas en la universidad del valle
               y desde 2022 trabajo todos los veranos en Estados Unidos como staff en un campamento de verano.`;
-    }
+    },
+
   },
 };
 
@@ -56,4 +63,3 @@ async function startApolloServer() {
 }
 
 startApolloServer();
-
