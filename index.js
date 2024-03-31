@@ -6,7 +6,7 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
-    aboutKellyQ : String
+    aboutErvin: String 
   }
 `;
 
@@ -14,14 +14,16 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: (_, { message }) => {
-        return `¡Hola, ${message}! Un saludo por parte del profe `;
-      },
-    aboutKellyQ: () =>{
-      return `¡Hola, soy Kelly Quintana tengo 22 años y me encanta aprender nuevas tecnologías.
-              Soy Estudiante de ingenieria de sistemas y desarrolladora junior para una empresa de apuestas de Cali!`;
-    }
+      return `¡Hola, ${message}! Un saludo por parte del profe `;
+    },
+    aboutErvin: () => {
+      return 'Hola, soy Ervin. Soy estudiante de ingeniería de sistemas de sexto semestre.';
+    },
   },
 };
+
+
+
 
 async function startApolloServer() {
   // Crea la instancia de Apollo Server
@@ -51,4 +53,3 @@ async function startApolloServer() {
 }
 
 startApolloServer();
-
