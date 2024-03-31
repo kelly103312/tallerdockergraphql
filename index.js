@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello(message: String!): String
     aboutKellyQ : String
+    aboutJuanMolina : String
   }
 `;
 
@@ -19,7 +20,12 @@ const resolvers = {
     aboutKellyQ: () =>{
       return `¡Hola, soy Kelly Quintana tengo 22 años y me encanta aprender nuevas tecnologías.
               Soy Estudiante de ingenieria de sistemas y desarrolladora junior para una empresa de apuestas de Cali!`;
-    }
+    },
+    aboutJuanMolina: () =>{
+      return `¡Hola, soy Juan Sebastian Molina tengo 29 años y me encanta jugar RPG's.
+              Lo que me gusta de los RPG's es que son muy inmersivos y te permiten vivir una historia diferente a la tuya.
+              Soy Estudiante de ingenieria de sistemas y un apasionado por la programacion.`;
+    },
   },
 };
 
