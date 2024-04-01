@@ -9,8 +9,9 @@ const typeDefs = gql`
     aboutKellyQ : String
     aboutErvin: String 
     aboutMateo : String
-    aboutJuanMolina : String
     aboutJavier : String
+    aboutEstiven : String
+    aboutJuanMolina : String
 
   }
 `;
@@ -46,6 +47,9 @@ const resolvers = {
                y la programación web`;
 
    },
+    aboutEstiven: () =>{
+      return `¡Hola, soy Estiven, tengo 24 años y soy estudiante de uv. Me encanta la natación, y el café.`;
+    },
 
   },
 };
