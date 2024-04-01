@@ -9,6 +9,7 @@ const typeDefs = gql`
     aboutKellyQ : String
     aboutErvin: String 
     aboutMateo : String
+    aboutJuanMolina : String
   }
 `;
 
