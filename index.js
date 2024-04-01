@@ -9,8 +9,10 @@ const typeDefs = gql`
     aboutKellyQ : String
     aboutErvin: String 
     aboutMateo : String
+    aboutJavier : String
     aboutEstiven : String
     aboutJuanMolina : String
+
   }
 `;
 
@@ -40,6 +42,11 @@ const resolvers = {
               y desde 2022 trabajo todos los veranos en Estados Unidos como staff en un campamento de verano.`;
     },
 
+    aboutJavier: () =>{
+      return `¡Hola, soy Javier Lasso, tengo 20 años, soy estudiante de ingeniería de sistemas, me gusta jugar fútbol 
+               y la programación web`;
+
+   },
     aboutEstiven: () =>{
       return `¡Hola, soy Estiven, tengo 24 años y soy estudiante de uv. Me encanta la natación, y el café.`;
     },
