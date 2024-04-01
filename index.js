@@ -53,7 +53,7 @@ const resolvers = {
     },
 
     aboutHernanC: () =>{
-      return `¡Hola, soy Hernan, tengo 23 años y soy estudiante de ingeniería de sistemas en la universidad del valle. Me gusta aprender nuevos idiomas y hacer arte.`;
+      return `¡Hola, soy Hernan, tengo 23 años y soy estudiante de ingeniería de sistemas en la universidad del valle. Me gusta aprender nuevos idiomas y hacer arte de diferentes tipos.`;
     }
 
   },
