@@ -9,6 +9,7 @@ const typeDefs = gql`
     aboutKellyQ : String
     aboutErvin: String 
     aboutMateo : String
+    aboutEstiven : String
     aboutJuanMolina : String
   }
 `;
@@ -37,6 +38,10 @@ const resolvers = {
     aboutMateo: () =>{
       return `¡Hola, soy Mateo, tengo 24 años y soy estudiante de ingeniería de sistemas en la universidad del valle
               y desde 2022 trabajo todos los veranos en Estados Unidos como staff en un campamento de verano.`;
+    },
+
+    aboutEstiven: () =>{
+      return `¡Hola, soy Estiven, tengo 24 años y soy estudiante de uv. Me encanta la natación, y el café.`;
     },
 
   },
