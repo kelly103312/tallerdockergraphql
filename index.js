@@ -12,6 +12,7 @@ const typeDefs = gql`
     aboutJavier : String
     aboutEstiven : String
     aboutJuanMolina : String
+    aboutHernanC : String
 
   }
 `;
@@ -50,6 +51,10 @@ const resolvers = {
     aboutEstiven: () =>{
       return `¡Hola, soy Estiven, tengo 24 años y soy estudiante de uv. Me encanta la natación, y el café.`;
     },
+
+    aboutHernanC: () =>{
+      return `¡Hola, soy Hernan, tengo 23 años y soy estudiante de ingeniería de sistemas en la universidad del valle. Me gusta aprender nuevos idiomas y hacer arte de diferentes tipos.`;
+    }
 
   },
 };
